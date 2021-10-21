@@ -47,7 +47,7 @@ void LittleVgl::InitDisplay() {
   disp_drv.flush_cb = disp_flush;
   /*Set a display buffer*/
   disp_drv.buffer = &disp_buf_2;
-  disp_drv.user_data = this;
+  disp_drv.user_data = this; //hi
 
   /*Finally register the driver*/
   lv_disp_drv_register(&disp_drv);
